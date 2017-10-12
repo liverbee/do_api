@@ -11,6 +11,7 @@ func main(){
 	r := gin.New()
 
 	r.Use(cors.Default())
+	r.GET("/user",ctrl.RptGetDoDetail)
 	r.Run(":9000")
 
 }
